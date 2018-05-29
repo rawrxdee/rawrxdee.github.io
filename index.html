@@ -6,6 +6,7 @@
 <link rel="stylesheet" type="text/css" href="main.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <title>RAWR xD</title>
+<body onload="typeWriter();">
 </head>
 <body>
 
@@ -16,7 +17,7 @@
   <a href="">Projects</a>
   <a href="">Contact</a>
   <a href="">About</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <a href="javascript:void(0);" class="icon" onclick="responsiveSize()">
     <i class="fa fa-bars"></i>
   </a>
 </div> 
@@ -26,22 +27,14 @@
 <div class="image-top">
 	<img src="home.png">
 </div>
-
-  <h2>Misfits united</h2>
-  <p>Three bad bois from IT running probably the worst meme everything in Australia, if not the world.</p>
-  <p>We also think we can program.</p>
+  <p>Three bad bois from IT running probably the worst meme social enterprise in Australia, if not the world.</p>
+  <p id="typewriter"></p>
 </div>
 
-<script>
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script>
-
+</div>
+<div class="footer">
+	<p>Copyright © RAWR xD 2018</p>
+</div>
+<script src="main.js"></script>
 </body>
 </html>
